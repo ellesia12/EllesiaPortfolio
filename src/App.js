@@ -7,9 +7,9 @@ import HomePage from "./components/homepage";
 
 //import components for router
 import Resume from "./components/Resume";
-import Portfolio from "./components/Portfolio"
-import Contact from "./components/Contact"
-
+import Portfolio from "./components/Portfolio";
+import Contact from "./components/Contact";
+import Blog from "./components/Blog";
 /* import pdf from './bachelorUSA.pdf'; */
 
 
@@ -22,6 +22,11 @@ const App = () =>{
    <Route path="/contact"
       render={(props)=>(
         <Contact {...props} />
+      )}
+    />
+    <Route path="/blog"
+      render={(props)=>(
+        <Blog {...props} />
       )}
     />
     <Route path="/portfolio"

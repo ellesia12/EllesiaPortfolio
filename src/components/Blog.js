@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme=>({
 
 
 
-const Portfolio = () =>{
+const Blog = () =>{
 
 const classes = useStyles();
 
@@ -38,4 +38,4 @@ const classes = useStyles();
 
 
 
-export default Portfolio;
+export default Blog;
