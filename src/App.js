@@ -10,6 +10,7 @@ import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
+import AboutEllesia from "./components/AboutEllesia";
 /* import pdf from './bachelorUSA.pdf'; */
 
 
@@ -39,6 +40,11 @@ const App = () =>{
            <Resume {...props} />
             )} >
     </Route>
+    <Route path="/aboutEllesia" 
+      render={(props) =>(
+        <AboutEllesia {...props} />
+      )}
+    />
     <Route exact path="/" 
       render={(props) =>(
         <HomePage {...props} />
