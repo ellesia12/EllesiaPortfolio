@@ -61,6 +61,9 @@ const useStyles = makeStyles(theme =>({
         margin: "0.5rem",
         width: 190,
         height: 230
+    },
+    word:{
+        fontFamily: "'Oswald', sans-serif",
     }
 }));
 
@@ -142,7 +145,7 @@ const slideList = slider => (
                     <IconButton onClick={toggleSlider("right", true)} className={classes.backButton}>
                         <MenuIcon className={classes.arrow}/>
                     </IconButton>
-                    <Typography variant="h5" className={classes.words}>
+                    <Typography variant="h5" className={classes.word}>
                         Menu
                     </Typography>
                     <Drawer open={slide.right} anchor="right" onClose={toggleSlider("right", false)}>

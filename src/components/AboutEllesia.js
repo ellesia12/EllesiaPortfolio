@@ -4,6 +4,11 @@ import { makeStyles } from "@material-ui/core/styles"
 import { TextField, Typography, Button, Grid, Box} from "@material-ui/core";
 
 
+
+import '../App.css';
+import Home from './Home';
+
+
 const useStyles = makeStyles(theme=>({
     box:{
         paddingTop: "150px",
@@ -20,8 +25,14 @@ const useStyles = makeStyles(theme=>({
     },
     img: {
         width: "300px"
+    },
+    word: {
+        fontFamily: "'Oswald', sans-serif",
+    },
+    header: {
+        fontFamily:"'Yeseva One', cursive",
+        textTransform:"uppercase",
     }
-
 }))
 
 
@@ -34,10 +45,11 @@ const classes = useStyles();
     return(
         <>
              <Box component="div" style={{background:"#C38D9E", height:"100vh"}}>
+             <Home />
                 <Grid container justify="center">
                     <Box className={classes.box}>
-                    <Typography variant="h2" >
-                        About Me
+                    <Typography variant="h2" className={classes.header}>
+                        About Me...
                     </Typography>
                         <Typography variant="h6" className={classes.word}>
                             My name is Ellesia. I am an American Frontend Web Developer living in Germany.

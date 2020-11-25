@@ -3,6 +3,7 @@ import { makeStyles, withStyles } from "@material-ui/core/styles"
 import { TextField, Typography, Button, Grid, Box} from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
 import emailjs from "emailjs-com";
+import Home from './Home'
 
 const InputField = withStyles({
     root:{
@@ -37,7 +38,9 @@ const useStyles = makeStyles(theme=>({
     header: {
         textAlign: "center",
         textTransform:"uppercase",
-        marginBottom:"30px"
+        marginBottom:"30px",
+        fontFamily:"'Yeseva One', cursive"
+        
     }
 }))
 // dont forget navbar
@@ -63,6 +66,7 @@ const sendEmail = (e) =>{
     return(
         <>
            <Box component="div" style={{background:"#C38D9E", height:"100vh"}}>
+           <Home />
                 <Grid container justify="center">
                     <Box component="form" onSubmit={sendEmail} className={classes.form}>
                         <Typography variant="h3" className={classes.header}>
